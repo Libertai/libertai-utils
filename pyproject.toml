@@ -8,7 +8,6 @@ packages = [{include = "libertai"}]
 [tool.poetry.dependencies]
 python = "^3.12"
 web3 = "^6.3.0"
-aleph-sdk-python = "^1.0.1"
 setuptools = "^75.2.0"
 distribute = "^0.7.3"
 eciespy = "^0.4.2"

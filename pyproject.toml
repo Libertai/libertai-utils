@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "libertai-utils"
+version = "0.0.1"
+description = "Libertai utils"
+authors = ["Ali El broudi", "Reza Rahemtola <49811529+RezaRahemtola@users.noreply.github.com>"]
+packages = [{include = "libertai"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+web3 = "^6.3.0"
+aleph-sdk-python = "^1.0.1"
+setuptools = "^75.2.0"
+distribute = "^0.7.3"
+eciespy = "^0.4.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.1"
+ruff = "^0.6.0"
+
+[tool.poetry.group.test.dependencies]  
+pytest = "^8.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

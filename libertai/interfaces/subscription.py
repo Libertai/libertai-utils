@@ -44,3 +44,13 @@ class Subscription(BaseSubscription):
 
 class FetchedSubscription(Subscription):
     post_hash: str
+
+
+class GetUserSubscriptionsResponse(BaseModel):
+    subscriptions: list[BaseSubscription]
+
+
+class SubscriptionDefinition(BaseModel):
+    type: SubscriptionType
+    providers: list[SubscriptionProvider]
+    multiple: bool = False

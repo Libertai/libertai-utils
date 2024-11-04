@@ -1,5 +1,5 @@
-from libertai_utils.blockchains.ethereum import is_eth_signature_valid, format_eth_address
-from libertai_utils.blockchains.solana import is_solana_signature_valid
+from libertai_utils.chains.ethereum import is_eth_signature_valid, format_eth_address
+from libertai_utils.chains.solana import is_solana_signature_valid
 from libertai_utils.interfaces.subscription import SubscriptionChain
 
 

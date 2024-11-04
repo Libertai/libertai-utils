@@ -1,2 +1,3 @@
 # libertai-utils
-Libertai python Utilities
+
+LibertAI internal types and functions

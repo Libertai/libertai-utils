@@ -1,22 +1,29 @@
 [tool.poetry]
 name = "libertai-utils"
 version = "0.0.1"
-description = "Libertai utils"
-authors = ["Ali El broudi", "Reza Rahemtola <49811529+RezaRahemtola@users.noreply.github.com>"]
-packages = [{include = "libertai"}]
+description = "LibertAI internal types and functions"
+authors = ["LibertAI.io team <hello@libertai.io>"]
+readme = "README.md"
+homepage = "https://libertai.io"
+repository = "https://github.com/LibertAI/libertai-utils"
+documentation = "https://docs.libertai.io"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 web3 = "^6.3.0"
-setuptools = "^75.2.0"
-distribute = "^0.7.3"
 eciespy = "^0.4.2"
+pydantic = "^2.9.2"
+solders = "^0.22.0"
+pynacl = "^1.5.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.1"
 ruff = "^0.6.0"
 
-[tool.poetry.group.test.dependencies]  
+[tool.poetry.group.test.dependencies]
 pytest = "^8.3.3"
 
 

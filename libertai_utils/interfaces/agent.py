@@ -10,3 +10,7 @@ class BaseDeleteAgentBody(BaseModel):
 
 class BaseSetupAgentBody(BaseDeleteAgentBody):
     account: SubscriptionAccount
+
+
+class UpdateAgentResponse(BaseModel):
+    instance_ip: str

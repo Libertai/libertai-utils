@@ -1,6 +1,19 @@
+from enum import Enum
+
 from pydantic import BaseModel
 
 from libertai_utils.interfaces.subscription import SubscriptionAccount
+
+
+class AgentPythonPackageManager(str, Enum):
+    poetry = "poetry"
+    requirements = "requirements"
+    pyproject = "pyproject"
+
+
+class AgentUsageType(str, Enum):
+    fastapi = "fastapi"
+    python = "python"
 
 
 class BaseDeleteAgentBody(BaseModel):

@@ -28,3 +28,12 @@ class BaseSetupAgentBody(BaseDeleteAgentBody):
 class UpdateAgentResponse(BaseModel):
     instance_ip: str
     error_log: str
+
+
+class AddSSHKeyAgentBody(BaseModel):
+    secret: str
+    ssh_key: str
+
+
+class AddSSHKeyAgentResponse(BaseModel):
+    error_log: str

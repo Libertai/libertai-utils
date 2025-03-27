@@ -1,6 +1,6 @@
 from enum import Enum
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class SubscriptionProvider(str, Enum):
@@ -24,8 +24,14 @@ class SubscriptionAccount(BaseModel):
     address: str
     chain: SubscriptionChain
 
-    class Config:
-        schema_extra = {"example": {"address": "0x0000000000000000000000000000000000000000", "chain": "base"}}
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "address": "0x0000000000000000000000000000000000000000",
+                "chain": "base",
+            }
+        }
+    )
 
 
 class BaseSubscription(BaseModel):

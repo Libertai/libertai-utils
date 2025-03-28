@@ -13,7 +13,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-web3 = "^7.9.0"
+web3 = "^7.10.0"
 eciespy = "^0.4.2"
 pydantic = "^2.10.6"
 solders = "^0.22.0"

@@ -24,3 +24,12 @@ def is_solana_signature_valid(message: str, signature: str, address: str) -> boo
         return bytes_message == retrieved_message
     except BadSignatureError:
         return False
+
+
+def is_solana_address(address: str) -> bool:
+    """Check if an address is a valid Solana address."""
+    try:
+        _valid_address = Pubkey.from_string(address)
+        return True
+    except Exception:
+        return False

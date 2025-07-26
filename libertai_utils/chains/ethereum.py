@@ -16,3 +16,12 @@ def is_eth_signature_valid(message: str, signature: str, address: str) -> bool:
 
 def format_eth_address(address: str) -> str:
     return address.lower()
+
+
+def is_eth_address(address: str) -> bool:
+    """Validate an Ethereum address"""
+    try:
+        _valid_address = Web3.to_checksum_address(address)
+        return True
+    except (ValueError, TypeError):
+        return False
